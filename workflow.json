@@ -1,1 +1,6 @@
+const input = $json["Body"] || "";
+const parts = input.trim().split(" ");
+const command = parts[0].toUpperCase();
+const args = parts.slice(1);
+return [{ command, args }];
 
